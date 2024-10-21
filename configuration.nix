@@ -7,7 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      ./hardware.nix
 #      ./vb-host.nix
       ./vb-guest.nix
       ./fish.nix
@@ -105,7 +105,6 @@
   environment.systemPackages = with pkgs; [
     micro
     chromium
-    brave
     git
     github-desktop
     vlc
@@ -123,7 +122,6 @@
     tmux
     tldr
     yt-dlp
-    imagemagick
     ffmpeg
     localsend
 	catppuccin-cursors.mochaMauve
