@@ -28,9 +28,9 @@
 
 	# WITH FLAKES
 	# update nix flake, has to be in the directory of the flake.lock file
-	up = "cd ~/nixcfg; nix flake update;";
+	up = "cd ~/nixcfg-vb; nix flake update;";
 	# update the system
-	rs = "sudo nixos-rebuild switch --flake ~/nixcfg";
+	rs = "sudo nixos-rebuild switch --flake ~/nixcfg-vb";
 	
 	# CLI COMMANDS
 	t = "btop";
@@ -40,9 +40,6 @@
 	sfi = "source ~/.config/fish/config.fish";
 	
 	# SHORCUTS FOR PROGRAMS
-	v = "nvim";
-	V = "sudo nvim";
-	r = "ranger";
 	e = "micro";
 	
 	# POWER
@@ -50,15 +47,15 @@
 	re = "reboot";
 	
 	# YOUTUBE DOWNLOAD
-	yab = "cd ~/Downloads/; yt-dlp -x --audio-format mp3 -f bestaudio = "
-	ya = "cd ~/Downloads/; yt-dlp --extract-audio --audio-format mp3 --audio-quality 0 = "
-	yv = "cd ~/Downloads/; yt-dlp = "
+	#yab = "cd ~/Downloads/; yt-dlp -x --audio-format mp3 -f bestaudio = "
+	#ya = "cd ~/Downloads/; yt-dlp --extract-audio --audio-format mp3 --audio-quality 0 = "
+	#yv = "cd ~/Downloads/; yt-dlp = "
 	
 	# PYTHON3 SERVER
-	py = "python3 -m http.server -b = "
+	#py = "python3 -m http.server -b = "
 	
 	# git
-	gc = "cd /BIGDATA/git; git clone";
+	#gc = "cd /BIGDATA/git; git clone";
     };
   };
 
