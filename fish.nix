@@ -4,14 +4,17 @@
   programs.fish = {
     enable = true;
     shellAliases = {
-    };
-    shellAbbrs = {
+		l = "eza -lh --group-directories-first";
+		la = "eza -lha --group-directories-first";
+	};
+    
+	shellAbbrs = {
 	
 	### NIXOS
 
 	# NIXOS GENERAL
 	# list active channel
-	chls = "sudo nix-channel --list";
+	lsch = "sudo nix-channel --list";
 	# delete old stuff
 	clean = "sudo nix-collect-garbage --delete-older-than 3d";
 	# look when something is being delete
@@ -25,9 +28,37 @@
 
 	# WITH FLAKES
 	# update nix flake, has to be in the directory of the flake.lock file
-	up = "cd ~/nixos-config; nix flake update;";
+	up = "cd ~/nixcfg; nix flake update;";
 	# update the system
-	rs = "sudo nixos-rebuild switch --flake ~/nixos-config";
+	rs = "sudo nixos-rebuild switch --flake ~/nixcfg";
+	
+	# CLI COMMANDS
+	t = "btop";
+	ri = "rg -i";
+	s = "sudo";
+	d = "du -sh *";
+	sfi = "source ~/.config/fish/config.fish";
+	
+	# SHORCUTS FOR PROGRAMS
+	v = "nvim";
+	V = "sudo nvim";
+	r = "ranger";
+	e = "micro";
+	
+	# POWER
+	sd = "shutdown now";
+	re = "reboot";
+	
+	# YOUTUBE DOWNLOAD
+	yab = "cd ~/Downloads/; yt-dlp -x --audio-format mp3 -f bestaudio = "
+	ya = "cd ~/Downloads/; yt-dlp --extract-audio --audio-format mp3 --audio-quality 0 = "
+	yv = "cd ~/Downloads/; yt-dlp = "
+	
+	# PYTHON3 SERVER
+	py = "python3 -m http.server -b = "
+	
+	# git
+	gc = "cd /BIGDATA/git; git clone";
     };
   };
 
