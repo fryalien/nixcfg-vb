@@ -124,7 +124,7 @@
     yt-dlp
     ffmpeg
     localsend
-	catppuccin-cursors.mochaMauve
+    catppuccin-cursors.mochaMauve
     krename
     kdePackages.kbackup
     kdePackages.ark
