@@ -33,6 +33,12 @@
 	# update the system
 	rs = "sudo nixos-rebuild switch --flake ~/nixcfg-vb";
 	
+	# WITH FALKES AND HOME MANAGER
+	up = "cd ~/nixcfg-vb; nix flake update;";
+	# UPDATE SYSTEM
+	rs = "sudo nixos-rebuild switch --flake ~/nixcfg-vb";
+	rhm = "home-manager switch --flake ~/nixcfg-vb";
+	
 	# CLI COMMANDS
 	t = "btop";
 	ri = "rg -i";
