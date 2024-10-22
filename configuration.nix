@@ -144,11 +144,13 @@
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
-
+  
+  # Enable firewall.
+  networking.firewall.enable = true;
   # Open ports in the firewall.
   networking.firewall.allowedTCPPorts = [ 53317 ];
   networking.firewall.allowedUDPPorts = [ 53317 ];
-  networking.firewall.enable = true;
+  
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

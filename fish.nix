@@ -3,6 +3,7 @@
 {
   programs.fish = {
     enable = true;
+	promptInit = "";
     shellAliases = {
 		l = "eza -lh --group-directories-first";
 		la = "eza -lha --group-directories-first";
@@ -23,8 +24,8 @@
 	lsgen = "sudo nix-env --list-generations --profile /nix/var/nix/profiles/system";
 
 	# WITHOUT FLAKES
-	#up = "sudo nix-channel --update"
-	#rs = "sudo nixos-rebuild switch"
+	#up = "sudo nix-channel --update";
+	#rs = "sudo nixos-rebuild switch";
 
 	# WITH FLAKES
 	# update nix flake, has to be in the directory of the flake.lock file
